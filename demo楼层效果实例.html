@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+			*{padding: 0;margin: 0;}
+			.banner{width: 600px;height: 650px;margin: 0 auto;text-align: center;line-height: 650px;
+			font-size: 20px;}
+			.banner_one{background: red;}
+			.banner_two{background: green;}
+			.banner_three{background: gray;}
+			.banner_four{background: pink;}
+			.banner_five{background: orchid;}
+			.banner_six{background: orange;}
+			.floor{position: fixed;top: 200px;left: 100px;}
+			.floor li{width: 50px;height: 50px;border: 1px solid red;list-style: none;
+			text-align: center;line-height: 50px;}
+			a{text-decoration: none;color: black;display: block;}
+			.footer{width:600px;height:300px;background:bisque;margin:0 auto;text-align:center;}
+			.active{background: red;}		
+		</style>
+</head>
+<body>
+	<!--banner部分-->
+		<div class="banner_one banner" id="floor1">我是楼层1</div>
+		<div class="banner_two banner" id="floor2">我是楼层2</div>
+		<div class="banner_three banner" id="floor3">我是楼层3</div>
+		<div class="banner_four banner" id="floor4">我是楼层4</div>
+		<div class="banner_five banner" id="floor5">我是楼层5</div>
+		<div class="banner_six banner" id="floor6">我是楼层6</div>
+		<div class="footer">我是底部</div>
+		<!--楼层部分-->
+		<div class="floor">
+			<ul>
+				<li><a href="#floor1">1</a></li>
+				<li><a href="#floor2">2</a></li>
+				<li><a href="#floor3">3</a></li>
+				<li><a href="#floor4">4</a></li>
+				<li><a href="#floor5">5</a></li>
+				<li><a href="#floor6">6</a></li>
+			</ul>
+		</div>
+</body>
+</html>
+<script type="text/javascript">
+//第一种点击li元素到相应的楼层的方法,可以直接用锚点的方式,然后加上点击后的效果	
+	$(".floor li").click(function(){
+		$(this).addClass("active").siblings().removeClass("active")
+	})
+
+
+
+	// 第二种点击li元素到相应的楼层的方法，锚点要去掉
+			var flag = true //设置标识。防止出现跑马灯
+			$(".floor li").click(function(){
+				flag = false
+				$(this).addClass("active").siblings().removeClass("active")
+				var index = $(this).index()//获取当前点击元素的索引
+				var top = $(".banner").eq(index).offset().top;//获取每个banner到顶部的距离
+				$("html,body").stop(true).animate({"scrollTop":top},function(){flag = true})
+			})
+			
+//			滚轮滑动切换楼层
+			$(window).scroll(function(){
+				if(flag){
+				//浏览器可视窗口的一半，也可以根据自己需求设定
+					var winH = $(window).innerHeight()/2;
+					var scrollT = $(window).scrollTop()
+					var len = $(".banner").size()
+					for(var i=0;i<len;i++){
+						//注意这里banner对象加了i之后变成了js对象,所以用offsetTop
+						var bannerGap = $(".banner")[i].offsetTop - scrollT
+						if(bannerGap < winH){
+							$(".floor li").eq(i).addClass("active").siblings().removeClass("active")
+						}
+					}
+				}
+			})
+</script>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/dengl.css">
+</head>
+<body>
+<!-- header -->
+<div class="dl_top">
+	<a href="#">
+		<img src="img/taobao.png" alt="">
+	</a>
+	<p>为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！</p>
+	<div class="dl_top_bom">
+		<span class="iconfont icon-fk"></span>
+		<a href="#"> "登录页面"改进建议</a>
+	</div>
+</div>
+<!-- center -->
+
+<div class="dl_center">
+	<div class="dl_center_box">
+		<div class="dl_center_one">
+			密码登录
+		</div>
+		<form action="">
+			<div id="form_one">
+				<span><img src="img/yhm.png" alt=""></span>
+				<input type="text" placeholder="会员名/邮箱/手机号">
+			</div>
+			<div id="form_two">
+				<span><img src="img/mm.png" alt=""></span>
+				<input type="text">
+			</div>
+			<div id="form_three">
+				<input type="submit" value="登录">
+			</div>
+		</form>
+		<div class="dl_center_box2">
+			<a href="#"><b><img src="img/wb.png" alt=""></b>微博登录</a>
+			<a href="#"><b><img src="img/zfb.png" alt=""></b>支付宝登录</a>
+		</div>
+		<div class="dl_center_box3">
+			<a href="#">忘记密码</a>
+			<a href="#">忘记会员名</a>
+			<a href="zhuce.html">免费注册</a>
+		</div>
+	</div>
+	
+</div>
+<!-- foot -->
+
+<div class="footBottom">
+		<div class="foot_Bom_right">
+			<div class="bom_one">
+				<a href="#">阿里巴巴集团</a>
+				<a href="#">阿里巴巴国际站</a>
+				<a href="#">阿里巴巴中国站</a>
+				<a href="#">全球速卖通</a>
+				<a href="#">淘宝网</a>
+				<a href="#">天猫</a>
+				<a href="#">聚划算</a>
+				<a href="#">一淘</a>
+				<a href="#">阿里妈妈</a>
+				<a href="#">飞猪</a>
+				<a href="#">虾米</a>
+				<a href="#">阿里云计算</a>
+				<a href="#">云OS</a>
+				<a href="#">万网</a>
+				<a href="#">支付宝</a>
+				<a href="#">来往</a>
+			</div>
+			<div class="bom_two">
+				<a href="#">关于淘宝</a>
+				<a href="#">合作伙伴</a>
+				<a href="#">营销中心</a>
+				<a href="#">廉正举报</a>
+				<a href="#">联系客服</a>
+				<a href="#">开放平台</a>
+				<a href="#">诚征英才</a>
+				<a href="#">联系我们</a>
+				<a href="#">网站地图</a>
+				<a href="#">法律声明</a>
+				<a href="#">隐私权政策</a>
+				<div class="bom_three">网络文化经营许可证：浙网文[2016]0132-032号</div>
+			</div>
+			
+			<div class="bom_three"> 网络文化经营许可证：浙网文[2016]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0132-032号增值电信业务经营许可证：浙B2-20080224-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信息网络传播视听节目许可证：1109364号
+			</div>
+			<div class="bom_img"><img src="img/wj.gif" alt=""></div>
+		</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	function $(id) {
+		return document.getElementById(id);
+	}
+
+	$("form_one").onclick=function(){
+		$("form_one").style.border="2px solid #95B7EE";
+		$("form_two").style.border="none";
+		$("form_three").style.border="none";
+	}
+
+	$("form_two").onclick=function(){
+	
+		$("form_two").style.border="2px solid #95B7EE";
+		$("form_one").style.border="none";
+		$("form_three").style.border="none";
+
+	}
+
+	$("form_three").onclick=function(){
+	
+		$("form_three").style.border="2px solid #95B7EE";
+		$("form_one").style.border="none";
+		$("form_two").style.border="none";
+
+	}
+</script>

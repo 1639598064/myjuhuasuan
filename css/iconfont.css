@@ -1,0 +1,29 @@
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1563966808930'); /* IE9 */
+  src: url('../font/iconfont.eot?t=1563966808930#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOsAAsAAAAAB9wAAANeAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqDJIJkATYCJAMQCwoABCAFhG0HOhvIBsguIScbV4RS1Z51IMGrm4VrXt8MH2CIh2pv7XX37N+5I4ZYHgUqRoXNEhUlGIFwFJJCKITJGn3/p2t9xHyAdr1E3EPyJ5tdnwyifqJalFhRcr2+/qpzg8sCSqjkybcB7YfOtYigSoPhZm8T+m/9cQNdAb3LN0CAgMO26PE6l8FA/z7P5fRa4OH8dpbj2puPegHGAQW0N7ZBAi6QAuMW2UVcEYs8TmDSShoe58tqWsBfg8YF4pEiC+CfCWmaku3CULG0ibeUj56vmQdvgs/HP50/aVTQSRfulEpQ8NP/1xKv2f+snpqlZsdzQFlFYTvQiHuVrhu8otR2Xiat33g7CHRd8tP/59MT/s+LkCoaxfv446UiBkLldLCfTxc//SlJ8HOSJPmVUKHghWh678wz4IPIWl431sSs2Q2xJybmTewy93HwOqL5ETchG5DyfXldP/T0i5q5wUbz1apssM+MeyE+0y8FweTlJy8+eIZvMB4evpd5qzvqFroOKM+XsApqbA55ikOvG2hq4d3BANQOhRe8zT77BlQ6XEefUD7Z8PHop+dyhRm8dB66eIEhPfXj5HMx7M6H4rU5zdCzMu3z0V+fMonxYnvnp8RPl39911z4IueqvncFJv4+ADXRP+JO+B1bAvrttAOcdcfCF8mAazCzLax1EaLiDEpwB8KLPWkYQo4Pn9QXb9TlF7WmvDxPGH1nZxLKBTClptVpAOpoSgDU13zy175j/Omd9ofl/O9qAz/66ghCU5p+6S4Bi/+RGNjQbCkyt2bKqMgpb07w45YNJrGVP5Njrh9jaBaAKwndggRpbAVKt57WWNsxMs1+DLpTmLRN+epp5mG8RJvAVkscwmxvkWb6gjLbJa2xrjCy0F8MZueFSRcjastpNqYEFjMUOEpkcIwootNBiZUHhtVNKA/ZBJaWBpw2ZKoSJUadIZ8tRweyMWaow7KJc0ooc9pJGXca2mxO4mJOC4pcZ+bclaXX06on6USnHQKdwyABhyTEoDGEQuTkQL3WXGDh/U2QbIiNgDVQWsJtEKNSOieMdAwAWrnKAaJcyzmqYTITjqMIinGyI8o4B7LhlBPhqh5kgUScjrlHwiWLXmhGoSrd/Br7E26DSWj/FhkVLUbqusvlSa0+qllwyAAAAA==') format('woff2'),
+  url('../font/iconfont.woff?t=1563966808930') format('woff'),
+  url('../font/iconfont.ttf?t=1563966808930') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('../font/iconfont.svg?t=1563966808930#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-app:before {
+  content: "\e608";
+}
+
+.icon-fk:before {
+  content: "\e67c";
+}
+
+.icon-shang:before {
+  content: "\e719";
+}
+

@@ -1,0 +1,131 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,hr,input,td,select,textarea{
+	margin:0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+img{
+	border:none;
+	display: block;
+}
+/*footer*/
+.footBox{
+	width: 100%;
+	height: 395px;
+	padding: 47px 0 30px;
+    border-top: 3px solid #D8DBE5;
+    background: #f2f3f7;;
+}
+/*footTop*/
+.footTop {
+	width:1185px; 
+	height: 240px;
+	margin:0 auto;
+}
+.footTop a{
+	display: inline-block;
+	color: #7c7c7c;
+	font-size: 12px;
+	height: 31px;
+	line-height:35px;
+	text-decoration: none;
+}
+.footTop a:hover{
+	text-decoration: underline;
+}
+.footTop h3{
+	height: 42px;
+	width: 70px;
+	line-height: 35px;
+	border-bottom: 2px solid #e1e1e1;
+	font-size: 14px;
+	color: #666666;
+}
+.footTop_one{
+	width: 90px;
+	margin-right:46px;
+	float: left;
+}
+.footTop_two{
+	width: 70px;
+	margin:0 42px;
+	float: left;
+}
+.footTop_three{
+	width: 70px;
+	margin:0 42px;
+	float: left;
+}
+.footTop_four{
+	width: 70px;
+	margin:0 47px;
+	float: left;
+}
+.footTop_five{
+	width: 70px;
+	margin:0 42px;
+	float: left;
+}
+.footTop_six{
+	width: 100px;
+	margin:0 42px;
+	float: left;
+}
+.footTop_seven{
+	width: 155px;
+	margin:0 42px;
+	float: left;
+}
+.footTop_seven h3{
+	height: 35px;
+	width: 70px;
+	border-bottom: 2px solid #e1e1e1;
+	font-size: 14px;
+	color: #989898;
+}
+.footTop_seven img{
+	margin-top: 12px;
+}
+/*footBottom*/
+.foot_Bom_left{
+	width: 165px;
+	float: left;
+	padding-top: 50px;
+}
+.foot_Bom_right{
+	width: 990px;
+	float: left;
+	margin-left: 25px;
+	padding-top: 30px;
+}
+.footBottom{
+	width: 1185px;
+	height: 155px;
+	border-top:1px solid #e6e7eb;
+	margin:0 auto;
+}
+.bom_one a{
+	display: inline-block;
+    padding: 0 6px;
+    border-left: solid 1px #999;
+    margin-bottom: 15px;
+    height: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #999;
+    font-size: 12px;
+}
+.bom_one a:nth-child(1){
+	border-left:none;
+}
+.bom_three{
+	font-size: 12px;
+	margin-top: 4px;
+    line-height: 26px;
+    color: #999;
+}
