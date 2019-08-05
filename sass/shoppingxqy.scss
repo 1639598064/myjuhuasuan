@@ -1,0 +1,319 @@
+body,
+p,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+td,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+/*nav*/
+.nav_box {
+    width: 1190px;
+}
+
+.nav_box_right {
+    float: left;
+    margin-left: 275px;
+}
+
+/*header*/
+.logo {
+    height: 80px;
+    border-bottom: 1px solid #c8baaa;
+}
+
+.logo_box {
+    width: 1190px;
+}
+
+.sous {
+    margin-left: 558px;
+}
+
+/*center*/
+.center {
+    width: 100%;
+    height: 100%;
+}
+
+.centerBox {
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.box_top {
+    width: 1190px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.box_top {
+    a {
+        img {
+            width: 200px;
+            height: 40px;
+        }
+    }
+}
+
+/*content*/
+.content {
+    width: 100%;
+    height: 500px;
+}
+
+.contentBox {
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.contentBoxLeft {
+    img {
+        width: 450px;
+        height: 420px;
+        float: left;
+        border: 1px solid #F0EFEF;
+    }
+}
+
+.contentBoxRight {
+    width: 590px;
+    height: 418px;
+    margin-left: 50px;
+    background: pink;
+    float: left;
+}
+
+.contentBoxRight {
+    a {
+        font-weight: 700;
+        color: black;
+    }
+}
+
+.contentBoxRight {
+    span {
+        display: block;
+        color: red;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
+.contentBoxRight {
+    img {
+        margin-top: 10px;
+        width: 590px;
+    }
+}
+
+.contentBoxRight {
+    p {
+        font-size: 14px;
+        color: #999;
+        line-height: 42px;
+    }
+}
+
+.contentBoxRight {
+    ul {
+        width: 590px;
+        height: 45px;
+        border-top: 1px dotted #c9c9c9;
+        border-bottom: 1px dotted #c9c9c9;
+        line-height: 45px;
+    }
+}
+
+.contentBoxRight {
+    ul {
+        li {
+            display: inline-block;
+            width: 169px;
+            height: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.contentBoxRight {
+    ul {
+        li {
+            span {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.contentBoxRight .leiji {
+    border-left: 1px solid #E9E9E9;
+    border-right: 1px solid #E9E9E9;
+    line-height: 20px;
+}
+
+/*footer*/
+.footer_img {
+    img {
+        width: 95px;
+        height: 45px;
+        // margin-bottom: -105px;
+        // margin-left: -140px;
+    }
+}
+
+.footBottomBox {
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+    background: #000000;
+    font-size: 12px;
+    border-top: 2px solid #FF0036;
+}
+
+.footBottom {
+    width: 1190px;
+    height: 145px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.bom_one {
+    width: 100%;
+    height: 36px;
+    line-height: 64px;
+    margin-top: 10px;
+}
+
+.bom_one a {
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    height: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+}
+
+.bom_two a:nth-child(1) {
+    border-left: none;
+}
+
+.bom_two a {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    color: white;
+}
+
+.bom_three {
+    margin-top: 4px;
+    line-height: 26px;
+    margin-left: 4px;
+    color: #A4A4A4;
+}
+
+/*右边导航 */
+.nav_right {
+    position: fixed;
+    right: 0px;
+    bottom: 100px;
+}
+
+.nav_right li {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 2px 20px;
+    font-size: 23px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nav_right li span {
+    margin-top: -5px;
+    display: block;
+    font-size: 12px;
+}
+
+#nav_right_one {
+    color: white;
+    margin-top: 5px;
+    background: #C2C2C2;
+    line-height: 35px;
+}
+
+#nav_right_two {
+    background: white;
+    border: 1px solid #F5F5F5;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#nav_right_three {
+    background: white;
+    border: 1px solid #F5F5F5;
+}
+
+.iconfont {
+    color: red;
+}
+
+#nav_right_one:hover {
+    background: #E61414;
+}
+
+#nav_right_two:hover {
+    background: #E61414;
+    color: white;
+}
+
+#nav_right_two:hover img {
+    display: block;
+}
+
+#nav_right_three:hover {
+    background: #E61414;
+    color: white;
+}
+
+#nav_right_two img {
+    display: inline-block;
+    width: 200px;
+    height: 180px;
+    position: absolute;
+    left: -199px;
+    top: -98px;
+    display: none;
+}
