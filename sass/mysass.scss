@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 body,
 p,
 ul,
@@ -135,6 +137,10 @@ img {
 	height: 340px;
 }
 
+#rushBuy:hover {
+	border: none;
+}
+
 .box_right {
 	display: inline-block;
 	width: 570px;
@@ -189,7 +195,7 @@ img {
 		margin-left: 5px;
 		vertical-align: middle;
 		font-weight: 400;
-		width: 120px;
+		width: 140px;
 	}
 }
 
