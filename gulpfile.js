@@ -1,8 +1,8 @@
 let gulp = require('gulp');
-let concat = require('gulp-concat');
-let uglify = require('gulp-uglify');
-let rename = require('gulp-rename');
-let connect = require('gulp-connect');
+// let concat = require('gulp-concat');
+// let uglify = require('gulp-uglify');
+// let rename = require('gulp-rename');
+// let connect = require('gulp-connect');
 
 // 复制
 gulp.task("copyhtml", async () => {
