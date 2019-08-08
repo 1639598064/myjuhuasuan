@@ -108,7 +108,7 @@ function afterCheckUser(func) {
 	let xhr = new XMLHttpRequest();
 	//2、设置请求参数
 	let sendstr = "username=" + $("#usernameId").value;
-	xhr.open("get", "checkuser.php?" + sendstr, true);
+	xhr.open("get", "php/checkuser.php?" + sendstr, true);
 
 	//3、设置回调函数
 	xhr.onreadystatechange = () => {
@@ -128,16 +128,17 @@ function regSave() {
 	let xhr = new XMLHttpRequest();
 
 	//2、设置请求参数
-	xhr.open("post", "regSave03.php", true);
+	xhr.open("post", "php/regSave03.php", true);
 
 	//3、设置回调函数 
 	xhr.onreadystatechange = function () {
 		if (xhr.readyState == 4 && xhr.status == 200) {
 			if (xhr.responseText == 1) {
-				$("#msg").innerHTML = "亲，恭喜您，注册成功！跳转到登录页面";
-				location.href = "indexs.html";
+				alert("亲，恭喜您，注册成功！为您跳转到登录页面");
+				location.href = "denglu.html";
+				document.cookie = `username=${$('#usernameId').value}`;
 			} else {
-				$("#msg").innerHTML = "亲，不好意思，注册失败！请重新输入内容";
+				alert("亲，不好意思，注册失败！请重新输入内容");
 			}
 		}
 	}

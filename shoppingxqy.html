@@ -7,6 +7,55 @@
 	<link rel="stylesheet" href="css/iconfont.css">
 	<link rel="stylesheet" href="css/shoppingCar.css">
 	<link rel="stylesheet" href="css/shoppingxqy.css">
+	<style>
+		.showimg {
+			position: relative;
+			width: 450px;
+			height: 420px;
+			border: 1px solid #f5f5f5;
+		}
+
+		.show {
+			width: 450px;
+			height: 420px;
+		}
+
+		.product-img img {
+			margin: 0 10px;
+			width: 60px;
+			height: 60px;
+			border: 2px solid #FFF;
+		}
+
+		.showbox {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0.5;
+			cursor: move;
+			width: 225px;
+			height: 210px;
+			background-color: lightblue;
+			display: none;
+		}
+
+		.showlarge {
+			position: absolute;
+			overflow: hidden;
+			top: 0;
+			left: 470px;
+			width: 450px;
+			height: 420px;
+			border: 1px solid #f5f5f5;
+			display: none;
+		}
+
+		.showlarge img {
+			width: 900px;
+			height: 840px;
+			position: absolute;
+		}
+	</style>
 </head>
 
 <body>
@@ -14,7 +63,7 @@
 	<div class="nav">
 		<div class="nav_box">
 			<div class="nav_box_left">
-				<a href="#">请登录</a>
+				<a href="#" class="wrapperLeft_a">请登录</a>
 				<a href="#">消息</a>
 				<a href="#">手机逛淘宝</a>
 			</div>
@@ -44,112 +93,8 @@
 		</div>
 	</div>
 	<!-- center -->
-	<div class="center">
-		<div class="centerBox">
-			<div class="box_top">
-				<a href="#"><img src="img/fm.png" alt=""></a>
-				<a href="#"><img src="img/fs.png" alt="" style="width: 100px;margin-left:20px;"></a>
-			</div>
-		</div>
-	</div>
-	<!-- 商品详情 -->
-	<div class="content">
-		<div class="contentBox">
-			<!-- 上边的大图 -->
-			<div class="contentBoxLeft">
-				<img src="img/y0.png" alt="">
-			</div>
-			<!-- 下边的小图 -->
-			<div class="centerBoxLeftBom">
-				<ul>
-					<li><img src="img/y0.png" alt=""></li>
-					<li><img src="img/y1.png" alt=""></li>
-					<li><img src="img/y2.png" alt=""></li>
-					<li><img src="img/y3.png" alt=""></li>
-					<li><img src="img/y4.png" alt=""></li>
-				</ul>
-			</div>
-			<div class="contentBoxRight">
-				<a href="#"> 【加10元赠18W快充】Xiaomi/小米 小米CC9e新品全面屏拍照游戏智能手机索尼4800万学生cc9官方旗舰9E</a>
-				<span>加10元赠18W快充</span>
+	<div class="center_box">
 
-				<div class="right_one">
-					<img src="img/al.png" alt="" title="此商品8月8日开卖，请提前加购！">
-					<span>此商品8月8日开卖，请提前加购！</span>
-				</div>
-				<!-- 购买详情价格 -->
-				<dl class="right_two">
-					<dd>
-						<b>价格</b>
-						<i class="pice_i">￥</i>
-						<span id="moneySJ">1299.00-1599.00</span>
-					</dd>
-					<dd>
-						<b>88狂欢价</b>
-						<i>￥</i>
-						<span id="money88">1299.00-1599.00</span>
-					</dd>
-				</dl>
-				<p>运费&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京至 北京v东城区v 快递: 0.00</p>
-				<ul>
-					<li>月销量<span>1.0万+</span></li>
-					<li class="leiji">累计评价<span>2544</span></li>
-					<li>送天猫积分<b>299</b>起</li>
-				</ul>
-				<!-- 商品类型选择 -->
-				<div class="right_three">
-					<ol>
-						<li>网络类型
-							<div class="typeBox">
-								<a href="#">4G+全网通</a>
-							</div>
-						</li>
-						<li>机身颜色
-							<div class="typeBox">
-								<a href="#">白色恋人</a>
-							</div>
-						</li>
-						<li>套餐类型
-							<div class="typeBox">
-								<a href="#">官方标配</a>
-							</div>
-						</li>
-						<li>储存容量
-							<div class="typeBox">
-								<a href="#">6+64G</a>
-							</div>
-						</li>
-						<li>数量
-							<input type="text" class="numBox" id="numBer" value="1" disabled>
-							<div class="addNum">
-								<button id="add">∧</button>
-								<button id="reduce">∨</button>
-							</div>
-							件<span class="kunC">库存20件</span>
-						</li>
-					</ol>
-				</div>
-				<div class="right_four">
-					<a href="#" id="fuBuy">立即购买</a>
-					<a href="#" id="addCar">加入购物车</a>
-				</div>
-			</div>
-		</div>
-		<div class="canNumber">
-			<div class="canNumberLeft">
-				<img src="img/sp4.png" alt="">
-				<img src="img/sp7.png" alt="">
-				<img src="img/sp5.png" alt="">
-				<img src="img/sp6.png" alt="">
-			</div>
-			<div class="canNumberRight">
-				<img src="img/sp1.png" alt="">
-				<img src="img/sp2.png" alt="" class="spTwo">
-				<img src="img/sp3.png" alt="" class="spThree">
-				<img src="img/sp8.png" alt="" class="spFour">
-				<img src="img/sp9.png" alt="" class="spFive">
-			</div>
-		</div>
 	</div>
 
 
@@ -214,3 +159,11 @@
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/shoppingxqy.js"></script>
+<script type="text/javascript" src="js/usernameCookie.js"></script>
+<script type="text/javascript">
+	//调用显示用户名
+	window.onload = function () {
+		usernameCookie();
+
+	}
+</script>

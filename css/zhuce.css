@@ -190,10 +190,11 @@ img {
 
 .zhuce {
 	width: 420px;
-	height: 390px;
+	height: 290px;
 	background: #E9E9F2;
 	position: relative;
 	margin-left: 780px;
+	padding-top: 100px;
 }
 
 label {

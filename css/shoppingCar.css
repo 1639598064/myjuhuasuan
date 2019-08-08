@@ -56,6 +56,7 @@ img {
 	color: #6C6C6C;
 	font-size: 12px;
 	margin: 10px 20px;
+	vertical-align: middle;
 }
 
 .nav_box_right {
@@ -95,6 +96,14 @@ img {
 	font-size: 25px;
 	vertical-align: middle;
 	font-weight: 500;
+}
+
+.wrapperLeft_a {
+	display: inline-block;
+	width: 44px;
+	overflow: hidden;
+	vertical-align: middle;
+
 }
 
 .sous {
@@ -271,7 +280,7 @@ img {
 
 .shopping_right {
 	float: left;
-	margin-left: 255px;
+	margin-left: 262px;
 }
 
 .shopping_right b {
@@ -282,7 +291,7 @@ img {
 
 .shoppingList {
 	width: 990px;
-	height: 100%;
+	height: 120px;
 	margin-top: 20px;
 	font-size: 14px;
 }
@@ -327,7 +336,10 @@ img {
 
 #aImg a img {
 	display: inline-block;
-	margin-left: 40px;
+	margin-left: 22px;
+	width: 80px;
+	height: 80px;
+
 }
 
 #aTxt a {
@@ -342,25 +354,25 @@ img {
 }
 
 #aCC a {
-	width: 100px;
+	width: 120px;
 	height: 100px;
 	display: inline-block;
-	margin-left: 60px;
+	margin-left: 44px;
 }
 
 #aCC a span {
 	display: block;
-	color: #CCCCCC;
+	color: #9c9c9c;
 	font-size: 1px;
 }
 
 #money {
-	margin-left: 32px;
+	margin-left: 55px;
 }
 
 #number {
 	vertical-align: top;
-	margin-left: 80px;
+	margin-left: 65px;
 }
 
 .numberBox {
@@ -415,7 +427,7 @@ img {
 }
 
 #jinE {
-	margin-left: 83px;
+	margin-left: 50px;
 }
 
 #jinE h3 {
@@ -423,7 +435,7 @@ img {
 }
 
 #caoZuo {
-	margin-left: 100px;
+	margin-left: 85px;
 }
 
 #total {
@@ -435,9 +447,14 @@ img {
 	font-size: 14px;
 }
 
+.total_box {
+	position: relative;
+}
+
 .total_box li {
 	display: inline-block;
 	line-height: 50px;
+
 }
 
 .total_box li a {
@@ -458,7 +475,7 @@ img {
 }
 
 #total_box_four {
-	margin-left: 410px;
+	margin-left: 360px;
 }
 
 .total_box span {
@@ -479,4 +496,7 @@ img {
 	text-align: center;
 	line-height: 50px;
 	margin-left: 21px;
+	position: absolute;
+	right: 0;
+	bottom: 2px;
 }

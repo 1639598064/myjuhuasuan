@@ -625,13 +625,30 @@
 </html>
 <script type="text/javascript" src="js/jQuery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/rightdh.js"></script>
+<script type="text/javascript" src="js/usernameCookie.js"></script>
 <script type="text/javascript">
 	//调用右边导航的函数，实现回到顶部的效果
+
 	window.onmousewheel = function () {
-
 		goHome();
+		var s = document.getElementsByClassName('lou_righr');
+		var _top = document.documentElement.scrollTop;
+		if (_top >= 600) {
+			s[0].style.position = 'fixed';
+			s[0].style.top = 0;
+			s[0].style.right = 85;
+			// s[0].style.zIndex = 3;
+		} else {
+			s[0].style.position = 'absolute';
+			s[0].style.top = 0;
+			s[0].style.right = 85;
+			// s[0].style.zIndex = 3;
+		}
 	}
-
+	//调用显示用户名
+	window.onload = function () {
+		usernameCookie();
+	}
 
 	// 点击楼层跳转的效果
 	$(function () {
